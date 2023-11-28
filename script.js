@@ -12,29 +12,30 @@
 
 // console.log(a); 
 
-// var nums=[2,7,11,15],target=9;
-// var output=[];
-// var twoSum = function(nums, target) {
+var nums = [3,2,4], target = 6;
+var output=[];
+var twoSum = function(nums, target) {
 
-//     for(let i=0;i<nums.length;i++){
-//       var j=i;
+    for(let i=0;i<nums.length;i++){
+      var j=i;
       
-//         for(let k=0;k<nums.length-1;k++){
-//           j++
-//           let m=j%nums.length;
-//           if(nums[i]+nums[m]==target){
-//             if(nums[i]!==nums[m]){
-//               console.log(nums[i],nums[m]);
-//             }
-//           }
-//         }
+        for(let k=0;k<nums.length-1;k++){
+          j++
+          let m=j%nums.length;
+          if(nums[i]+nums[m]==target){
+            
+              console.log(nums.indexOf(nums[i]),nums.indexOf(nums[m]));
+              return;
+            
+          }
+        }
         
         
-//     }
+    }
     
-// };
+};
 
-// twoSum(nums,target);
+twoSum(nums,target);
 
-// console.log(Math.floor(Math.random()*3));
+
 
